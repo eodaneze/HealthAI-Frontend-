@@ -10,17 +10,19 @@ import {
 } from "react-icons/fa";
 import { IoIosLogOut } from "react-icons/io";
 import UserImg from '../assets/avatar3.jpg'
-
+import { Link, useLocation } from 'react-router-dom';
 const Sidebar = () => {
     const [open, setOpen] = useState(true);
   const Menus = [
-    { title: "New Chat", src: "Chart_fill", icon: <FaEdit  size={15}/> },
-    { title: "Diagnosis History", src: "Chat", icon: <FaHistory  size={15}/>},
-    { title: "Update", src: "User", icon: <FaPlus size={15}/>},
+    { title: "New Chat", src: "Chart_fill", icon: <FaEdit  size={15}/>, to:'/chat' },
+    { title: "Diagnosis History", src: "Chat", icon: <FaHistory  size={15}/>, to:'/diagnosis'},
+    { title: "Update", src: "User", icon: <FaPlus size={15}/>, to:'/update'},
     { title: "Give Feedback ", src: "Calendar" , icon: <FaPen size={15}/>},
     { title: "Setting", src: "Setting", gap: true, icon: <FaCog size={15}/>},
     { title: "Help Center", src: "Setting", icon: <FaHeadset size={15}/>},
   ];
+  const location = useLocation();
+  const currentPath = location.pathname;
   return (
     <div>
          <div
@@ -56,13 +58,14 @@ const Sidebar = () => {
               key={index}
               className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
               ${Menu.gap ? "mt-[6rem]" : "mt-2"} ${
-                index === 0 && "bg-light-white"
+                Menu.to == currentPath ? "bg-light-white" : ""
               } `}
             >
+               {/* index === 0 && "bg-light-white" */}
               {/* <img src={`./src/assets/${Menu.src}.png`} /> */}
               <span>{Menu.icon}</span>
               <span className={`${!open && "hidden"} origin-left duration-200`}>
-                {Menu.title}
+                 <Link to={Menu.to}>{Menu.title}</Link>
               </span>
               
              

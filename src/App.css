@@ -127,4 +127,14 @@ button {
  width: 100%;
  border: none;
  outline: none;
+ z-index: 20;
+ background-color: transparent;
+}
+
+
+@media(max-width: 600px){
+  .typeChatbox{
+    width: 100%;
+    z-index: 20;
+  }
 }
