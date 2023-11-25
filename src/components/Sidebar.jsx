@@ -58,7 +58,7 @@ const Sidebar = () => {
               key={index}
               className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-[#0B1A51] text-sm items-center gap-x-4 
               ${Menu.gap ? "mt-[6rem]" : "mt-2"} ${
-                Menu.to == currentPath ? "bg-light-white" : ""
+                Menu.to == currentPath ? "bg-[#B7D3F3]" : ""
               } `}
             >
                {/* index === 0 && "bg-light-white" */}

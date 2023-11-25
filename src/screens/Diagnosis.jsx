@@ -12,6 +12,8 @@ const Diagnosis = () => {
          </div>
          <div>
             <DiagnosisBtn />
+
+           
          </div>
           
       </div>
