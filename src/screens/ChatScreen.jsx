@@ -40,6 +40,7 @@ const ChatScreen = () => {
             </div>
             <div className="typeChatbox fixed bottom-0 mb-3">
                   <input type="text" placeholder="Type in your message"/>
+                  <p><FaCircleArrowUp size={20}/></p>
             </div>
             
         </div>

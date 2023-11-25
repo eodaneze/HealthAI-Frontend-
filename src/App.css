@@ -112,14 +112,19 @@ button {
 
 /* type box */
 .typeChatbox{
-  width: 100%;
-}
-.typeChatbox input{
   width: 850px;
   padding: 8px;
   border: none;
   border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
 }
-.typeChatbox input:focus{
-  outline: 1px solid blue;
+.typeChatbox p{
+  cursor: pointer;
+}
+.typeChatbox input{
+ width: 100%;
+ border: none;
+ outline: none;
 }
