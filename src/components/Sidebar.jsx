@@ -28,7 +28,7 @@ const Sidebar = () => {
          <div
         className={` ${
           open ? "w-72" : "w-20 "
-        } bg-dark-purple h-screen p-5 z-10 pt-8 relative top-0 duration-300`}
+        } bg-[#E8F1FB] h-screen p-5 z-10 pt-8 relative top-0 duration-300`}
      
       >
         <img
@@ -45,7 +45,7 @@ const Sidebar = () => {
             }`}
           />
           <h1
-            className={`text-white origin-left font-medium text-xl duration-200 ${
+            className={`text-[#0B1A51] origin-left font-medium text-xl duration-200 ${
               !open && "scale-0"
             }`}
           >
@@ -56,7 +56,7 @@ const Sidebar = () => {
           {Menus.map((Menu, index) => (
             <li
               key={index}
-              className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
+              className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-[#0B1A51] text-sm items-center gap-x-4 
               ${Menu.gap ? "mt-[6rem]" : "mt-2"} ${
                 Menu.to == currentPath ? "bg-light-white" : ""
               } `}
@@ -74,7 +74,7 @@ const Sidebar = () => {
         <div className="user-img mt-6">
              <div>
                 <img className='w-[2rem] h-[2rem] rounded-full' src={UserImg} alt="" />
-                <p  className={`${!open && "hidden"} origin-left duration-200 username text-gray-300 text-sm font-semibold`}>
+                <p  className={`${!open && "hidden"} origin-left duration-200 username text-[#0B1A51] text-sm font-semibold`}>
                     <span>John Deo</span>
                     <span>john@gmail.com</span>
                 </p>

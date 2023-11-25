@@ -131,7 +131,10 @@ button {
  background-color: transparent;
 }
 
-
+/* diagonosis btn */
+.dia-btn{
+  border: 1px solid #ccc;
+}
 @media(max-width: 600px){
   .typeChatbox{
     width: 100%;
