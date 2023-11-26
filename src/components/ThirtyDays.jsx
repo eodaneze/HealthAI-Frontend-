@@ -1,10 +1,10 @@
 import React from 'react'
-import DiagnosisBtn from './DiagnosisBtn'
+// import DiagnosisBtn from './DiagnosisBtn'
 
 const ThirtyDays = () => {
   return (
     <div>
-        <DiagnosisBtn />
+        <h1>Thirty Days</h1>
     </div>
   )
 }

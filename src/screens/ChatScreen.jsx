@@ -1,4 +1,4 @@
-import React from "react";
+
 import Sidebar from "../components/Sidebar";
 import '../App.css';
 import { FaCircleArrowUp } from "react-icons/fa6";
