@@ -450,8 +450,8 @@ span.green{
       justify-content: center;
       flex-direction: column;
       gap: 10px;
-     height: 100vh;
-     width: 100vw;
+     /* height: 100vh;
+     width: 100vw; */
   }
   .registered{
     padding-bottom: 30px;
