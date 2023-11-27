@@ -17,7 +17,7 @@ const Sidebar = () => {
     { title: "New Chat", src: "Chart_fill", icon: <FaEdit  size={15}/>, to:'/chat' },
     { title: "Diagnosis History", src: "Chat", icon: <FaHistory  size={15}/>, to:'/diagnosis'},
     { title: "Update", src: "User", icon: <FaPlus size={15}/>, to:'/update'},
-    { title: "Give Feedback ", src: "Calendar" , icon: <FaPen size={15}/>},
+    { title: "Give Feedback ", src: "Calendar" , icon: <FaPen size={15}/>, to:'/feedback'},
     { title: "Setting", src: "Setting", gap: true, icon: <FaCog size={15}/>},
     { title: "Help Center", src: "Setting", icon: <FaHeadset size={15}/>},
   ];

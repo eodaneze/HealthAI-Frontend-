@@ -8,6 +8,7 @@ import WelcomeScreen2 from './screens/WelcomeScreen2'
 import WelcomeScreen3 from './screens/Welcomescreen3'
 import RegisterScreen from './screens/RegisterScreen'
 import LoginScreen from './screens/LoginScreen'
+import Feedback from './screens/Feedback'
 
 // import ThirtyDays from './components/ThirtyDays'
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
            <Route path='/chat' element={<ChatScreen />}/>
            <Route path='/diagnosis' element={<Diagnosis />}/>
            <Route path='/update' element={<Update />}/>
+           <Route path='/feedback' element={<Feedback />}/>
         </Routes>
       
     </div>

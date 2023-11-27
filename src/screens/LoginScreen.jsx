@@ -1,5 +1,5 @@
-import React from 'react'
-import { createBrowserRouter, Route, Link, NavLink, createRoutesFromElements, RouterProvider, useLocation } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { createBrowserRouter, Route, Link, NavLink, createRoutesFromElements, RouterProvider, useLocation, useNavigate } from 'react-router-dom'
 import left from '../assets/Vector 5.png'
 import right from '../assets/Vector 4.png'
 import bot from '../assets/bot.png'
@@ -12,8 +12,6 @@ import User from '../assets/user2.png'
 
 
 const LoginScreen = () => {
-   
-
   return (
     <main className='signUp'>
       <div className="reg-container">
@@ -33,9 +31,9 @@ const LoginScreen = () => {
          Username
         </label>
         <div className="input-box"> <img src={User} alt="email icon" /> <input id='username'  type="text" placeholder='Enter username'/> 
-        <label class="checkbox-container2">
+        <label className="checkbox-container2">
         <input type="checkbox" />
-        <span class="checkmark2"></span>
+        <span className="checkmark2"></span>
         </label>
         </div>
       </div>
@@ -45,16 +43,16 @@ const LoginScreen = () => {
          <p className="must">Must contain at least 8 characters, a number, an uppercase letter and a lowercase letter</p>
         </label>
         <div className="input-box"> <img src={Lock2} alt="password icon" /> <input id='password' type="password" placeholder='Enter password'/> 
-        <label class="checkbox-container2">
+        <label className="checkbox-container2">
         <input type="checkbox" />
-        <span class="checkmark2"></span>
+        <span className="checkmark2"></span>
         </label>
         </div>
       </div>
       <div className="stay">
-        <label class="checkbox-container">Stay logged in
+        <label className="checkbox-container">Stay logged in
         <input type="checkbox" />
-        <span class="checkmark"></span>
+        <span className="checkmark"></span>
         </label>
         {/* <div className="log">
           <input type="checkbox" name="checkbox" id="checkbox" />
@@ -65,7 +63,7 @@ const LoginScreen = () => {
       <p className='terms'>
       By signing up, you confirm that you’ve read and accepted our <span className="green">Terms of Service</span>  and <span className="green">Privacy Policy</span>. We will also subscribe you to our level up newsletter. You can also unsubscribe at anytime
       </p>
-      <button className='btn2'>Log in</button>
+      <Link to={'/chat'}><button className='btn2'>Log in</button></Link>
       <div className="registered">
         <p>Don't have an account? <Link to={'/signUp'}>Sign up</Link></p>
       </div>
